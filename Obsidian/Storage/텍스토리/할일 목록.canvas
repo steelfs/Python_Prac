@@ -1,8 +1,0 @@
-{
-	"nodes":[
-		{"id":"54a22ee1ac51fe99","x":-233,"y":-181,"width":250,"height":60,"type":"text","text":"콜벡메세지 업체 조사, 트레픽, 요금제, 및 차별화 요소 생각"},
-		{"id":"9356a2d07197de69","x":-270,"y":-77,"width":250,"height":60,"type":"text","text":"토리 캐릭터, 이모티콘"},
-		{"id":"48d3db6e3d16e92b","x":40,"y":-77,"width":250,"height":60,"type":"text","text":"가격표시, 문구의 필요성"}
-	],
-	"edges":[]
-}
