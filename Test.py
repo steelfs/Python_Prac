@@ -115,26 +115,40 @@
 
 # Collect_word(" Hello abs Absolutely above cab go bye a boy able ")
 
+import time
 
 def Collect_word(ab_str : str) -> int:
     result = 0
-    print(ab_str)
+   # print(ab_str)
 
     length = len(ab_str)
     for i in range(length):
+        # if i == length - 1: # 100000번 루프 기준 평균 0.8초
+        #     break
         char = ab_str[i]
-        if i == (length - 1):
-            break
-        next = ab_str[i + 1]
-        if char is 'a' or char == 'A':
+        #next = ab_str[(i + 1)]
+        next = ab_str[min((i + 1), length - 1)]# 100000번 루프 기준 평균 1.75초
+        if char == 'a' or char == 'A':
             if(next == 'b'):
                 result += 1
 
     return result
 
-result =  Collect_word(" Hello abs Absolutely above cab go bye a boy able ")
-print(result)
+
+count = 0
+def TestLoop():
+    global count
+    for i in range(100000):
+        result =  Collect_word(" Hello abs Absolutely above cab go bye a boy able ")
+        count = result
         
+before = time.time()    
+TestLoop()
+after = time.time()
+elapsed = after - before
+
+print(f'result = {count}')
+print(f'time : {elapsed:.2f}')
 '''
 6 위 문장에서 대소문자 구분하지 말고 "ab"의 갯수를 출력하세요. 
 (로직학습을 위한 것이므로  count 함수는 사용하지 마세요!)
