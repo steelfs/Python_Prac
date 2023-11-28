@@ -539,6 +539,16 @@ number = 20
     
 # Decimal_To_Binary(119)
 
+#개선된 것
+# def Decimal_To_Binary(n : int):
+#     binary = ''
+#     while n > 0:
+#         binary = str(n % 2) + binary
+#         n  = n // 2
+        
+#     print(binary)
+    
+# Decimal_To_Binary(87)
 
 '''
 19.  0부터 입력된 정수까지 3이 몇번 나올까요? 
@@ -732,7 +742,7 @@ number = [1,2,3,4,5,6,7,8,9,10]
 8
 9
 10
-'''
+# '''
 # def Print_By_Condition(numbers : list[int]):
 #     [print(z) for z in numbers if not ((z > 3) and (z < 8))]
     
@@ -771,7 +781,7 @@ number = [1,2,3,4,5,6,7,8,9,10]
 2
 4
 5
-# '''
+# # '''
 # def Print_By_Condition():
 #     i = 0
 #     while i < 5:
@@ -857,7 +867,7 @@ print(a)     // 6 출력됨
 
 a = sum_total(1,2,3,4,5,6,7,8,9,10)
 print(a) 
-'''
+# '''
 # def sum_total(*numbers : int) -> int:
 #     result = 0
 #     for i in numbers:
@@ -881,5 +891,18 @@ print(a)
 2023/01/25 23:29:50
 수요일 01-25-2023, 23:29:50
 11:29:50 PM
-'''
-
+# '''
+# import datetime
+# def Print_DateTime():
+#     current_time = datetime.datetime.now()
+    
+#     koreanDay = ['월요일', '화요일', '수요일', '목요일', '금요일', '토요일', '일요일']
+#     weekday = current_time.weekday()
+    
+#     print(current_time.strftime('%Y년 %m월 %d일 %H시 %M분 %S초'))
+#     print(current_time.strftime('%Y%m%d %H:%M:%S'))
+#     print(current_time.strftime('%Y/%m/%d %H:%M:%S'))
+#     print(current_time.strftime(f'{koreanDay[weekday]} %m-%d-%Y, %H:%M:%S'))
+#     print(current_time.strftime('%H:%M:%S %p'))
+    
+# Print_DateTime()
