@@ -35,6 +35,10 @@ r"ain\B"
 '''
 
 import re
+txt = 'The rain in spain'
+
+count = re.findall('in', txt)
+print(len(count))
 
 # txt = 'it\'s raining Today'
 # result = re.search('^it.$Today', txt)
@@ -61,6 +65,5 @@ import re
 #print(y)
 #x = re.search('in', txt)
     
-txt = 'The rain in spain'
-x = re.search('\bS\w+', txt)
-print(x)
+# x = re.search('\bS\w+', txt)
+# print(x)
