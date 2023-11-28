@@ -663,3 +663,223 @@ scores = {
 
 
 # Print_Scores(scores)
+
+'''
+21.  For 문과 If  문을 아래와 같이 출력되도록 하시요
+
+입력 및 출력 예시
+
+
+
+입력
+number = [1,2,3,4,5,6,7,8,9,10]
+
+출력
+1
+2
+4
+5
+7
+8
+10
+'''
+
+# def PrintByOrder(numbers : [list]):
+#     [print(x) for x in numbers if x % 3 != 0]
+  
+# PrintByOrder([1,2,3,4,5,6,7,8,9,10])
+
+
+
+'''
+22.  For 문과 If  문을 아래와 같이 출력되도록 하시요
+
+입력 및 출력 예시
+
+
+
+입력
+number = [1,2,3,4,5,6,7,8,9,10]
+
+출력
+3
+6
+9
+'''
+
+# def Multiple_Of_Three(numbers : list[int]):
+#     [print(x) for x in numbers if x % 3 == 0]
+    
+# Multiple_Of_Three([1,2,3,4,5,6,7,8,9,10])
+
+
+
+
+'''
+23.  For 문과 If  문을 아래와 같이 출력되도록 하시요
+
+입력 및 출력 예시
+
+
+
+입력
+number = [1,2,3,4,5,6,7,8,9,10]
+
+출력
+1
+2
+3
+8
+9
+10
+'''
+# def Print_By_Condition(numbers : list[int]):
+#     [print(z) for z in numbers if not ((z > 3) and (z < 8))]
+    
+# Print_By_Condition([1,2,3,4,5,6,7,8,9,10])
+
+
+
+'''
+24.  While 을 이용해서 아래와 같이 출력하시요
+
+입력 및 출력 예시
+
+출력
+1
+2
+3
+4
+5
+'''
+
+# def Print_In_Order():
+#     i = 1
+#     while i < 6:
+#         print(i) 
+#         i += 1
+
+# Print_In_Order()
+
+'''
+25.  While 과 if문을  이용해서 아래와 같이 출력하시요
+
+입력 및 출력 예시
+
+출력
+1
+2
+4
+5
+# '''
+# def Print_By_Condition():
+#     i = 0
+#     while i < 5:
+#         i += 1
+#         if i == 3:
+#             continue
+#         print(i)
+        
+# Print_By_Condition()
+
+
+
+
+'''
+26.  for와 range를 이용해서 아래와 같이 출력하시오
+
+입력 및 출력 예시
+
+출력
+2 5 8 11 14 17 20 23 26 29
+# '''
+# def Print_By_Condition():
+#     result = [str(x) for x in range(2, 30, 3)]
+#     print(' '.join(result))
+    
+# Print_By_Condition()
+
+'''
+27. 아래와 같이 함수를 만들어서 코드를 최대한 짧게 해서 아래와 같이 출력하세요
+
+입력 및 출력 예시
+
+출력
+
+****************************
+***     차온유  0세      ***
+****************************
+****************************
+***     차홍기  40세      ***
+****************************
+****************************
+***     조성덕  29세      ***
+****************************
+****************************
+***     이주엽  33세      ***
+****************************
+# '''
+# userData = {
+#     '차온유': 0,
+#     '차홍기': 40,
+#     '조성덕': 29,
+#     '이주엽': 33
+# }
+
+# from io import StringIO
+
+# def Print_Personal_Info(info: dict):
+#     stringBuilder = StringIO() 
+#     line_X = '*' * 28
+#     short = '*' * 3
+
+#     for name, age in info.items():
+#         stringBuilder.write(f'{line_X}\n')
+#         line = f'{short}\t {name}  {age}\t {short}\n'
+#         stringBuilder.write(line)
+#         stringBuilder.write(f'{line_X}\n')  
+
+#     result = stringBuilder.getvalue()
+#     print(result)
+
+# Print_Personal_Info(userData)
+
+
+
+
+
+'''
+29.  가변 길이 매개변수(*변수)를 활용한 함수를 만들어서 숫자의 개수를 다르게 넣어주면 그 숫자들의  합을 리턴하는 함수를 만들어라
+입력 및 출력 예시 
+
+a = sum_total(1,2,3)
+print(a)     // 6 출력됨 
+
+a = sum_total(1,2,3,4,5,6,7,8,9,10)
+print(a) 
+'''
+# def sum_total(*numbers : int) -> int:
+#     result = 0
+#     for i in numbers:
+#         result += i
+    
+#     return result
+        
+# a = sum_total(1,2,3,4,5,6,7,8,9,10)
+# print(a) 
+
+
+
+
+'''
+32.  현재시간을 기준으로 아래의 5가지 형식으로 날짜와 시간, 요일 등을 출력하시오 
+
+출력결과 
+
+2023년1월25일 23시29분50초
+20230125 23:29:50
+2023/01/25 23:29:50
+수요일 01-25-2023, 23:29:50
+11:29:50 PM
+'''
+
